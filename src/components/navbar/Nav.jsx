@@ -1,4 +1,10 @@
+"use client";
+import { DashBoardContext } from "@/context/context";
+import Search from "@/page/search/Search";
+import { useContext } from "react";
+
 const Nav = () => {
+  const all = useContext(DashBoardContext);
   return (
     <>
       <div className="h-full py-5 space-y-4 min-w-[72px] gap-y-3 bg-[#151519] flex flex-col items-center">
@@ -25,7 +31,16 @@ const Nav = () => {
         </span>
 
         <span className="flex items-center justify-center w-full">
-          <button className="group">
+          <button
+            className="group"
+            onClick={() =>
+              all?.setExplore(
+                (prev) => !prev,
+                all?.setSearch(false),
+                all?.setDownload(false)
+              )
+            }
+          >
             <div className="dark:bg-neutral-700 flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
               <svg
                 aria-hidden="true"
@@ -56,7 +71,16 @@ const Nav = () => {
         <div className="h-[2px] w-[32px] rounded-[1px] bg-zinc-500 " />
 
         <span className="flex items-center justify-center w-full">
-          <button className="group">
+          <button
+            className="group"
+            onClick={() =>
+              all?.setSearch(
+                (prev) => !prev,
+                all?.setExplore(false),
+                all?.setDownload(false)
+              )
+            }
+          >
             <div className="dark:bg-neutral-700 flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
               <svg
                 class="icon__5c8c7 visible__720ac"
@@ -81,7 +105,16 @@ const Nav = () => {
         </span>
 
         <span className="flex items-center justify-center w-full">
-          <button className="group">
+          <button
+            className="group"
+            onClick={() =>
+              all?.setDownload(
+                (prev) => !prev,
+                all?.setExplore(false),
+                all?.setSearch(false)
+              )
+            }
+          >
             <div className="dark:bg-neutral-700 flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
               <svg
                 aria-hidden="true"
