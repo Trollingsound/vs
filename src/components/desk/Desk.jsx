@@ -8,17 +8,6 @@ import Download from "@/page/download/Download";
 const Desk = () => {
   const all = useContext(DashBoardContext);
 
-  // return (
-  //   <>
-  //     <div className="">
-  //       {all?.explore && <Explore />}
-  //       {all?.search && <Search />}
-  //       {all?.download && <Download />}
-  //       {/* No Page? */}
-  //     </div>
-  //   </>
-  // );
-  
   if (all?.explore) {
     return <Explore />;
   } else if (all?.search) {
@@ -28,7 +17,7 @@ const Desk = () => {
   } else {
     return (
       <>
-        <div className="w-full px-4 py-2">No Page</div>
+        <div className="w-full px-4 py-2 transition-all">No Page</div>
       </>
     );
   }

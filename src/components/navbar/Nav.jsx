@@ -7,10 +7,10 @@ const Nav = () => {
   const all = useContext(DashBoardContext);
   return (
     <>
-      <div className="h-full py-5 space-y-4 min-w-[72px] gap-y-3 bg-[#151519] flex flex-col items-center">
+      <div className="h-full py-6 space-y-4 min-w-[74px] gap-y-3 bg-[#1e1f22] flex flex-col items-center">
         <span className="flex items-center justify-center w-full">
           <button className="group">
-            <div className="dark:bg-neutral-700 flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
+            <div className=" bg-[#313338] group-hover:bg-[#00a571] flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
               <svg
                 aria-hidden="true"
                 role="img"
@@ -41,7 +41,7 @@ const Nav = () => {
               )
             }
           >
-            <div className="dark:bg-neutral-700 flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
+            <div className="bg-[#313338] group-hover:bg-[#00a571] flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
               <svg
                 aria-hidden="true"
                 role="img"
@@ -61,7 +61,7 @@ const Nav = () => {
                   fill-rule="evenodd"
                   d="M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0ZM7.74 9.3A2 2 0 0 1 9.3 7.75l7.22-1.45a1 1 0 0 1 1.18 1.18l-1.45 7.22a2 2 0 0 1-1.57 1.57l-7.22 1.45a1 1 0 0 1-1.18-1.18L7.74 9.3Z"
                   clip-rule="evenodd"
-                  className="group-hover:text-white transition text-emerald-500"
+                  className="group-hover:text-white transition text-[#00a571]"
                 ></path>
               </svg>
             </div>
@@ -81,7 +81,7 @@ const Nav = () => {
               )
             }
           >
-            <div className="dark:bg-neutral-700 flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
+            <div className="bg-[#313338] group-hover:bg-[#00a571] flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
               <svg
                 class="icon__5c8c7 visible__720ac"
                 aria-hidden="true"
@@ -115,7 +115,7 @@ const Nav = () => {
               )
             }
           >
-            <div className="dark:bg-neutral-700 flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
+            <div className="bg-[#313338] group-hover:bg-[#00a571] flex items-center justify-center h-[48px] w-[48px] rounded-[24px] bg-background transition-all group-hover:rounded-[16px]">
               <svg
                 aria-hidden="true"
                 role="img"
